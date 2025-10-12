@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Fitree';
+    src: url('/fonts/Figtree.ttf');
+}
+
+@font-face {
+    font-family: 'Geist Mono';
+    src: url('/fonts/GeistMono.ttf');
+}
+
+@theme {
+    --font-sans: "Fitree", sans-serif;
+    --font-mono: "Geist Mono", monospace;
+}
