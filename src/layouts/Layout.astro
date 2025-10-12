@@ -1,17 +1,36 @@
 ---
 import '../styles/global.css';
+import { title, preview, description, site } from '../data';
+
+interface Props {
+	page?: string
+}
+
+const { page = title } = Astro.props as Props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	<meta name="generator" content={Astro.generator} />
 	<title>100 JS</title>
+	<meta name="title" content={page} />
+	<meta name="description" content={description} />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content={site.url} />
+	<meta property="og:title" content={page} />
+	<meta property="og:description" content={description} />
+	<meta property="og:image" content={preview} />
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content={site.url} />
+	<meta property="twitter:title" content={page} />
+	<meta property="twitter:description" content={description} />
+	<meta property="twitter:image" content={preview} />
 </head>
-<body>
+<body class="p-6 sm:p-9 md:px-12 md:pt-14 lg:px-14 lg:pt-20 xl:px-30 xl:pt-24 2xl:px-50 text-stone-200 bg-[#0c0900] selection:text-white selection:bg-yellow-300/30">
 	<slot />
 </body>
 </html>
