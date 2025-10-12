@@ -5,7 +5,6 @@ export type Link = {
 }
 
 export type Project = {
-    number: string | number,
     title: string,
     url: string,
     description: string,
