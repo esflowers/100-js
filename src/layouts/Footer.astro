@@ -1,0 +1,12 @@
+---
+import { ig } from "../data";
+import { projects } from "../data/projects";
+import Link from "../components/Link.astro";
+---
+
+<br><br><br>
+<footer class="mt-auto w-full flex items-center justify-between md:justify-center gap-5 font-mono text-sm text-stone-400">
+    <span class="">{projects.length}/100</span>
+    <span class="font-bold opacity-0 md:opacity-100">·</span>
+    <Link title={ig.title} url={ig.url} />
+</footer>
