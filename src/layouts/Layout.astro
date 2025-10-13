@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { title, preview, description, site } from '../data';
+import Footer from './Footer.astro';
 
 interface Props {
 	page?: string
@@ -16,7 +17,7 @@ const { page = title } = Astro.props as Props;
 	<meta name="viewport" content="width=device-width" />
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	<meta name="generator" content={Astro.generator} />
-	<title>100 JS</title>
+	<title>{page}</title>
 	<meta name="title" content={page} />
 	<meta name="description" content={description} />
 	<meta property="og:type" content="website" />
@@ -30,7 +31,8 @@ const { page = title } = Astro.props as Props;
 	<meta property="twitter:description" content={description} />
 	<meta property="twitter:image" content={preview} />
 </head>
-<body class="p-6 sm:p-9 md:px-12 md:pt-14 lg:px-14 lg:pt-20 xl:px-30 xl:pt-24 2xl:px-50 text-stone-200 bg-[#0c0900] selection:text-white selection:bg-yellow-300/30">
+<body class="min-h-dvh p-6 pt-16 sm:px-9 md:px-12 lg:px-14 lg:pt-20 xl:px-30 xl:pt-24 2xl:px-50 text-stone-200 bg-[#0c0900] selection:text-white selection:bg-yellow-300/30">
 	<slot />
+	<Footer />
 </body>
 </html>
