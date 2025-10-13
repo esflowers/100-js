@@ -22,3 +22,8 @@
         to { background-position: -200% 0; }
     }
 }
+
+* {
+    color-scheme: dark;
+    scrollbar-width: thin !important;
+}

@@ -1,0 +1,26 @@
+---
+import type { Project } from "../types";
+
+interface Number {
+    id?: number
+}
+
+type Props = Number & Project;
+const { id, title, url, description, created, image, tags } = Astro.props as Props;
+const formattedId = id?.toString().padStart(3, '0');
+---
+
+<div>
+    <a href={url} class="block relative aspect-video rounded-xl overflow-hidden group transition duration-200:" target="_blank">
+        <img src={image} alt={`${title} - Proyecto ${formattedId}`} class="w-full h-full rounded-xl object-cover object-center transition duration-200 group-hover:scale-105">
+        <div class="w-full h-full absolute flex items-end justify-end right-0 bottom-0 px-2.5 py-1.5 font-mono font-semibold tracking-tighter text-end text-xs text-stone-900 bg-gradient-to-br from-transparent via-transparent to-yellow-200">#{formattedId}</div>
+    </a>
+    <hgroup class="mt-2.5 font-semibold tracking-tight text-lg">{title}</hgroup>
+    <p class="mt-1.5 text-pretty text-sm text-stone-400">{description}</p>
+    <div class="mt-2 flex flex-wrap items-center gap-1 select-none">
+        <span title="Fecha de creación" class="px-2 py-0.5 font-mono text-nowrap tracking-tighter text-xs rounded-full text-stone-100 bg-stone-200/20">{created}</span>
+        {tags.map(tag => (
+            <span class="px-2 py-0.5 font-mono text-nowrap tracking-tighter text-xs rounded-full text-yellow-100 bg-yellow-200/20">{tag}</span>
+        ))}
+    </div>
+</div>
