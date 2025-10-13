@@ -1,6 +1,6 @@
 import type { Project } from "../types";
 
-export const projects: Project[] = [
+export const projects: Project[] = [ /*
     {
         title: 'Tinder Swipe',
         url: '',
@@ -104,5 +104,5 @@ export const projects: Project[] = [
         image: '',
         tags: ['IA Local', 'Reconocimiento de Voz', 'SpeechSynthesis'],
         created: '00/00/25'
-    },
+    }, */
 ]
