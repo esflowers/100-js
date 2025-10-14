@@ -1,14 +1,14 @@
 import type { Project } from "../types";
 
-export const projects: Project[] = [ /*
+export const projects: Project[] = [ 
     {
         title: 'Tinder Swipe',
-        url: '',
-        description: '',
-        image: '',
+        url: 'https://100js.esflowers.icu/1-tinder-swipe',
+        description: 'Simulación del gesto de deslizar tarjetas de Tinder, permitiendo aceptar o rechazar elementos con una interacción fluida y dinámica.',
+        image: 'https://100js.esflowers.icu/1-tinder-swipe/preview.png',
         tags: ['DOM', 'Animaciones con Gestos', 'Eventos Mouse & Touch', 'Transiciones CSS'],
-        created: '00/00/25'
-    },
+        created: '13/10/25'
+    }, /*
     {
         title: 'Arkanoid Game',
         url: '',
