@@ -1,0 +1,27 @@
+* {
+    scrollbar-width: none;
+}
+
+article {
+    cursor: grab;
+    inset: 0;
+    z-index: 2;
+
+    &.go-left {
+        transform: translateX(-150%) rotate(-30deg) !important;
+    }
+
+    &.go-right {
+        transform: translateX(150%) rotate(30deg) !important;
+    }
+
+    &.go-left,
+    &.go-right {
+        transition: transform .3s ease, rotate .3s ease;
+    }
+
+    &.reset {
+        transition: transform .3s ease;
+        transform: translateX(0) !important;
+    }
+}
