@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: 'Fitree';
-    src: url('/fonts/Figtree.ttf');
+    font-family: 'Onest';
+    src: url('/fonts/Onest.ttf');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
 }
 
 @theme {
-    --font-sans: "Fitree", sans-serif;
+    --font-sans: "Onest", sans-serif;
     --font-mono: "Geist Mono", monospace;
     --text-base: .93rem;
 
