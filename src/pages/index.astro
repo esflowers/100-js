@@ -8,8 +8,8 @@ import Card from '../components/Card.astro';
 
 <Layout>
 	<header class="flex flex-col items-center justify-center gap-5">
-		<h1 class="font-bold tracking-tighter text-center text-6xl xl:text-7xl text-transparent bg-clip-text bg-gradient-to-b from-amber-300 to-amber-950/30 select-none">&nbsp;{name}&nbsp;</h1>
-		<p class="md:max-w-[45ch] text-pretty text-center text-base text-stone-400">Resolución de la iniciativa de <Link title={midudev.title} url={midudev.url} className='text-purple-300' /> "<Link title={creator.title} url={creator.url} className='text-amber-100' />" <Link title={`(${creator.label})`} url={creator.url} className='font-mono' />, desarrollados con JavaScript puro, HTML & CSS, utilizando Tailwind CSS en esta versión.</p>
+		<h1 class="font-bold tracking-tighter text-center text-[4rem] xl:text-7xl 2xl:text-8xl text-transparent bg-clip-text bg-gradient-to-b from-amber-300 to-amber-950/30 select-none">&nbsp;{name}&nbsp;</h1>
+		<p class="md:max-w-[45ch] text-pretty text-center text-base text-stone-400">Resolución de la iniciativa de <Link title={midudev.title} url={midudev.url} className='text-purple-300' /> "<Link title={creator.title} url={creator.url} className='text-amber-100' />", desarrollados con JavaScript puro, HTML & CSS, y Tailwind CSS en esta versión.</p>
 		<nav class="flex items-center justify-center gap-5 text-sm select-none">
 			<a href={repository.url} target="_blank" class="font-mono text-amber-300 transition duration-200 hover:text-amber-600">{repository.title}</a>
 			<a href={dev.url} target="_blank" class="font-mono inline-flex animate-bg-shine bg-[linear-gradient(110deg,#33ffa3,45%,#1c1c1c,55%,#33ffa3)] bg-[length:250%_100%] bg-clip-text text-transparent transition duration-200 hover:opacity-50">{dev.title}</a>
