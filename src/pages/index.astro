@@ -7,8 +7,8 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout>
-	<header class="flex flex-col items-center justify-center gap-5">
-		<h1 class="font-bold tracking-tighter text-center text-[4rem] xl:text-7xl 2xl:text-8xl text-transparent bg-clip-text bg-gradient-to-b from-amber-300 to-amber-950/30 select-none">&nbsp;{name}&nbsp;</h1>
+	<header class="flex flex-col items-center justify-center gap-3">
+		<h1>&nbsp;{name}&nbsp;</h1>
 		<p class="md:max-w-[45ch] text-pretty text-center text-base text-stone-400">Resolución de la iniciativa de <Link title={midudev.title} url={midudev.url} />: <Link title={creator.title} url={creator.url} />, desarrollados con JavaScript puro, HTML & CSS, y Tailwind CSS en esta versión.</p>
 		<nav class="flex items-center justify-center gap-5 text-sm select-none">
 			<a href={repository.url} target="_blank" class="font-mono text-amber-300 transition duration-200 hover:text-amber-600">{repository.title}</a>

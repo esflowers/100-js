@@ -20,3 +20,7 @@
     color-scheme: dark;
     scrollbar-width: thin !important;
 }
+
+h1 {
+    @apply font-bold tracking-tighter text-center text-[4rem] xl:text-7xl 2xl:text-8xl text-transparent bg-clip-text bg-gradient-to-b from-amber-300 to-amber-950/30 select-none;
+}
