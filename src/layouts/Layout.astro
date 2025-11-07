@@ -1,7 +1,6 @@
 ---
 import '../styles/global.css';
 import { title, preview, description, site } from '../data';
-import Footer from './Footer.astro';
 
 interface Props {
 	page?: string
@@ -34,6 +33,5 @@ const { page = title } = Astro.props as Props;
 <body class="w-full min-h-dvh relative p-6 pt-20 sm:px-9 md:px-12 lg:px-14 lg:pt-20 xl:px-30 xl:pt-30 2xl:px-45 text-stone-200 bg-[#0c0900] selection:text-white selection:bg-amber-400/15">
 	<div class="-z-30 absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_130px,#533c0c4d,transparent)]"></div>
 	<slot />
-	<Footer />
 </body>
 </html>
