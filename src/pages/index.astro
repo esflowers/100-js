@@ -7,9 +7,9 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout>
-	<header class="flex flex-col items-center justify-center gap-3">
+	<header class="flex flex-col items-center justify-center gap-0 xl:gap-3">
 		<h1>&nbsp;{name}&nbsp;</h1>
-		<p class="md:max-w-[45ch] text-pretty text-center text-base text-stone-400">Resolución de la iniciativa de <Link title={midudev.title} url={midudev.url} />: <Link title={creator.title} url={creator.url} />, desarrollados con JavaScript puro, HTML, CSS y Tailwind CSS en esta versión.</p>
+		<p class="sm:max-w-[40ch] text-balance md:text-pretty text-center text-base text-stone-400">Resolución de la iniciativa de <Link title={midudev.title} url={midudev.url} />: <Link title={creator.title} url={creator.url} />, desarrollados con JavaScript puro, HTML, CSS y Tailwind CSS en esta versión.</p>
 	</header>
 
 	<menu class="mt-16 flex items-center justify-between gap-3 font-mono text-xs uppercase">

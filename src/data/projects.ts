@@ -16,7 +16,7 @@ export const projects: Project[] = [
         image: '',
         tags: ['Canvas', 'Eventos de Teclado', 'RequestAnimationFrame', 'Sprites'],
         created: '00/00/25'
-    },
+    },/*
     {
         title: 'Reto de Mecanografía',
         url: '',
