@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="https://100js.esflowers.icu/favicon.svg" />
-    <title>Tinder Swipe</title>
+    <title>Tinder Swipe - 100 JS</title>
     <meta name="title" content="Tinder Swipe - 100 JS">
-    <meta name="description" content="Simulación del gesto de deslizar tarjetas de Tinder, permitiendo aceptar o rechazar elementos con una interacción fluida y dinámica.">
+    <meta name="description" content="Simulación del gesto de deslizamiento de tarjetas de Tinder.">
     <meta property="og:type" content="website" />
 	<meta property="og:url" content="https://100js.esflowers.icu/1-tinder-swipe" />
 	<meta property="og:title" content="Tinder Swipe - 100 JS" />
-	<meta property="og:description" content="Simulación del gesto de deslizar tarjetas de Tinder, permitiendo aceptar o rechazar elementos con una interacción fluida y dinámica." />
+	<meta property="og:description" content="Simulación del gesto de deslizamiento de tarjetas de Tinder." />
 	<meta property="og:image" content="https://100js.esflowers.icu/1-tinder-swipe/preview.png" />
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://100js.esflowers.icu/1-tinder-swipe" />
 	<meta property="twitter:title" content="Tinder Swipe - 100 JS" />
-	<meta property="twitter:description" content="Simulación del gesto de deslizar tarjetas de Tinder, permitiendo aceptar o rechazar elementos con una interacción fluida y dinámica." />
+	<meta property="twitter:description" content="Simulación del gesto de deslizamiento de tarjetas de Tinder." />
 	<meta property="twitter:image" content="https://100js.esflowers.icu/1-tinder-swipe/preview.png" />
-    <link rel="stylesheet" href="/1-tinder-swipe/styles.css">
+    <base href="/1-tinder-swipe/">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +41,7 @@
                 }
 
                 &.like {
-                    @apply border-[#00ff51] text-[#00ff51] left-4 rotate-[-30deg];
+                    @apply border-[#00ff51] text-[#00ff53] left-4 rotate-[-30deg];
                 }
             }
 
@@ -58,58 +59,57 @@
         }
     </style>
 </head>
-<body class="w-full h-screen p-6 flex items-center justify-center text-stone-950 bg-linear-to-b from-[#ff7158] to-[#fd2b7b]">
-    <header class="hidden md:flex flex-col gap-0.5 fixed left-9 top-6">
+<body class="w-full h-dvh p-6 flex items-center justify-center text-stone-950 bg-linear-to-b from-[#ff7158] to-[#fd2b7b]">
+    <header class="hidden md:flex flex-col gap-0.5 fixed left-9 top-6 z-50">
         <h1 class="font-semibold text-stone-50 tracking-tight">Tinder Swipe</h1>
-        <a href="https://www.javascript100.dev/01-tinder-swipe" target="_blank" class="font-mono tracking-tighter text-xs text-stone-100 uppercase transition hover:text-stone-50 select-none">Comparativa <span class="text-sm">&UpperRightArrow;</span></a>
+        <span class="font-mono font-medium tracking-tight text-sm text-stone-200">#001</span>
     </header>
 
     <div class="h-full drop-shadow-lg drop-shadow-stone-950/20">
-        <main class="w-[320px] max-w-[320px] h-full relative flex bg-[url(/1-tinder-swipe/img/phone.webp)] bg-contain bg-no-repeat bg-center">
-            <section class="w-full px-4 py-1.5 mx-6 my-10 md:my-5 2xl:my-14 relative rounded-[32px] flex flex-col gap-6 overflow-hidden">
+        <main class="w-[320px] max-w-[320px] h-full relative flex bg-[url(img/phone.webp)] bg-contain bg-no-repeat bg-center">
+            <section class="w-full px-4 py-1.5 mx-6 my-10 sm:my-5 2xl:my-20 relative rounded-[32px] flex flex-col gap-6 overflow-hidden">
                 <div class="absolute inset-0 -z-10 bg-stone-100"></div>
                 <header class="pl-0.5 pt-1.5 flex justify-start">
-                    <img src="/1-tinder-swipe/img/logo.webp" alt="Tinder Logo" class="size-6" />
+                    <img src="img/logo.webp" alt="Tinder Logo" class="size-6" />
                 </header>
 
                 <div class="w-full h-full relative m-0">
                     <article>
-                        <img src="/1-tinder-swipe/photos/5.webp" alt="Clóe, 20 years old" />
+                        <img src="photos/5.webp" alt="Clóe, 20 years old" />
                         <h2>Clóe <span>20</span></h2>
                         <div class="choice nope">NOPE</div>
                         <div class="choice like">LIKE</div>
                     </article>
                     <article>
-                        <img src="/1-tinder-swipe/photos/4.webp" alt="Sergi, 19 years old" />
+                        <img src="photos/4.webp" alt="Sergi, 19 years old" />
                         <h2>Sergi <span>19</span></h2>
                         <div class="choice nope">NOPE</div>
                         <div class="choice like">LIKE</div>
                     </article>
                     <article>
-                        <img src="/1-tinder-swipe/photos/3.webp" alt="Fany, 22 years old" />
+                        <img src="photos/3.webp" alt="Fany, 22 years old" />
                         <h2>Fany <span>22</span></h2>
                         <div class="choice nope">NOPE</div>
                         <div class="choice like">LIKE</div>
                     </article>
                     <article>
-                        <img src="/1-tinder-swipe/photos/2.webp" alt="Álex, 24 years old" />
+                        <img src="photos/2.webp" alt="Álex, 24 years old" />
                         <h2>Álex <span>24</span></h2>
                         <div class="choice nope">NOPE</div>
                         <div class="choice like">LIKE</div>
                     </article>
                     <article>
-                        <img src="/1-tinder-swipe/photos/1.webp" alt="Leila, 23 years old" />
+                        <img src="photos/1.webp" alt="Leila, 23 years old" />
                         <h2>Leila <span>23</span></h2>
                         <div class="choice nope">NOPE</div>
                         <div class="choice like">LIKE</div>
                     </article>
-
                     <span class="h-full pt-8 -z-1 grid place-content-center font-medium text-pretty text-sm text-center text-stone-600">
                         No hay más personas cerca de ti...<br>Vuelve a intentarlo más tarde
                     </span>
                 </div>
 
-                <footer class="pb-6 flex items-center justify-between *:bg-[url(/1-tinder-swipe/img/icons.webp)] *:bg-no-repeat *:bg-position-[0_0] *:bg-size-[180px] *:size-8 *:rounded-full *:border-0 *:cursor-pointer *:transition-transform *:duration-150 *:ease-in *:hover:scale-110">
+                <footer class="pb-6 flex items-center justify-between *:bg-[url(img/icons.webp)] *:bg-no-repeat *:bg-position-[0_0] *:bg-size-[180px] *:size-8 *:rounded-full *:border-0 *:cursor-pointer *:transition-transform *:duration-150 *:ease-in *:hover:scale-110">
                     <button class="bg-position-[-147px_0]!" aria-label="undo"></button>
                     <button class="size-12! bg-size-[250px]! bg-position-[-150px_0]!" aria-label="remove"></button>
                     <button class="bg-position-[-73px_0]!" aria-label="star"></button>
@@ -120,15 +120,11 @@
         </main>
     </div>
 
-    <footer class="hidden fixed right-8 bottom-5 select-none font-mono tracking-tighter text-end text-sm text-stone-300 md:flex flex-col items-end gap-0.5">
-        <span class="font-medium">#001</span>
-        <a href="https://100js.esflowers.icu/" class="uppercase transition hover:text-stone-50"><span class="text-lg">&leftarrow;</span> Proyectos</a>
+    <footer class="hidden fixed right-8 bottom-5 select-none font-mono tracking-tight uppercase text-end text-xs text-stone-300 md:flex flex-col items-end gap-0.5 z-50">
+        <a href="https://100js.esflowers.icu/" class="group transition hover:text-stone-50"><span class="font-medium text-sm transition group-hover:rotate-180">+</span> Proyectos</a>
+        <a href="https://javascript100.dev/01-tinder-swipe" target="_blank" class="transition hover:text-stone-50">Comparativa</a>
     </footer>
 
-    <script src="/1-tinder-swipe/script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
