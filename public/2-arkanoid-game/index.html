@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="https://100js.esflowers.icu/favicon.svg" />
+    <title>Arkanoid Game - 100 JS</title>
+    <meta name="title" content="Arkanoid Game - 100 JS">
+    <meta name="description" content="Juego de pelota y ladrillos estilo Arkanoid.">
+    <meta property="og:type" content="website" />
+	<meta property="og:url" content="https://100js.esflowers.icu/2-arkanoid-game" />
+	<meta property="og:title" content="Arkanoid Game - 100 JS" />
+	<meta property="og:description" content="Juego de pelota y ladrillos estilo Arkanoid." />
+	<meta property="og:image" content="https://100js.esflowers.icu/2-arkanoid-game/preview.png" />
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://100js.esflowers.icu/2-arkanoid-game" />
+	<meta property="twitter:title" content="Arkanoid Game - 100 JS" />
+	<meta property="twitter:description" content="Juego de pelota y ladrillos estilo Arkanoid." />
+	<meta property="twitter:image" content="https://100js.esflowers.icu/2-arkanoid-game/preview.png" />
+    <base href="/">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: "Onest", sans-serif;
+            --font-mono: "Geist Mono", monospace;
+        }
+    </style>
+</head>
+<body class="w-full h-dvh p-6 flex items-center justify-center text-stone-200 bg-[#001239]">
+    <header class="flex flex-col gap-0.5 fixed left-6 md:left-9 top-6 z-50">
+        <h1 class="font-semibold text-stone-50 tracking-tight">Arkanoid Game</h1>
+        <span class="font-mono font-medium tracking-tight text-sm text-stone-200">#002</span>
+    </header>
+
+    <div class="font-medium text-center text-sm tracking-tight lg:hidden">Solo dispositivos de escritorio.</div>
+
+    <canvas class="hidden lg:block border border-stone-950 bg-[url('img/bg.png')] bg-repeat"></canvas>
+
+    <img hidden id="sprite" src="img/sprite.png" alt="Sprite Arkanoid" />
+    <img hidden id="bricks" src="img/bricks.png" alt="Sprite Bricks Arkanoid" />
+
+    <footer class="fixed right-6 md:right-8 bottom-6 md:bottom-5 select-none font-mono tracking-tight uppercase text-end text-xs text-stone-300 flex flex-col items-end gap-0.5 z-50">
+        <a href="https://javascript100.dev/02-arkanoid-game" target="_blank" class="transition hover:text-stone-50">Comparativa</a>
+        <a href="https://100js.esflowers.icu/" class="transition hover:text-stone-50">/ Proyectos</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
